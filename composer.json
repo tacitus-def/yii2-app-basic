@@ -2,7 +2,7 @@
     "name": "tacitus-def/yii2-app-basic",
     "description": "Yii 2 Basic Project Template",
     "keywords": ["yii2", "framework", "basic", "project template"],
-    "homepage": "https://gitflic.ru/project/knyaz/yii2-app-basic/",
+    "homepage": "https://github.com/tacitus-def/yii2-app-basic",
     "type": "project",
     "license": "BSD-3-Clause",
     "minimum-stability": "stable",
