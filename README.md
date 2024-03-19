@@ -66,13 +66,10 @@ http://localhost/basic/web/
 Extract the archive file downloaded from [yiiframework.com](https://www.yiiframework.com/download/) to
 a directory named `basic` that is directly under the Web root.
 
-Set cookie validation key in `config/web.php` file to some random secret string:
+Initialize the application by running `init` command
 
-```php
-'request' => [
-    // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
-    'cookieValidationKey' => '<secret random string goes here>',
-],
+```
+php init
 ```
 
 You can then access the application through the following URL:
@@ -88,9 +85,9 @@ Update your vendor packages
 
     docker-compose run --rm php composer update --prefer-dist
     
-Run the installation triggers (creating cookie validation code)
+Initialize the application
 
-    docker-compose run --rm php composer install    
+    docker-compose run --rm php /app/init
     
 Start the container
 
@@ -110,7 +107,7 @@ CONFIGURATION
 
 ### Database
 
-Edit the file `config/db.php` with real data, for example:
+Edit the file `config/db-local.php` with real data, for example:
 
 ```php
 return [
