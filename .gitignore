@@ -1,4 +1,8 @@
-yii
+/yii
+
+/web/index.php
+/web/index-test.php
+/web/robots.txt
 
 # phpstorm project files
 .idea
