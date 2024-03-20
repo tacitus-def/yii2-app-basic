@@ -54,6 +54,12 @@ You can then install this project template using the following command:
 composer create-project --prefer-dist tacitus-def/yii2-app-basic basic
 ~~~
 
+Initialize the application by running `init` command
+
+```
+php init
+```
+
 Now you should be able to access the application through the following URL, assuming `basic` is the directory
 directly under the Web root.
 
