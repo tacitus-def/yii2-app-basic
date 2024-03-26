@@ -76,6 +76,8 @@ Initialize the application by running `init` command
 
     /path/to/php-bin/php /path/to/yii-application/init
     
+Create a new database and adjust the `components['db']` configuration in `/path/to/yii-application/config/web-local.php` accordingly.
+
 Run the migrations
 
     /path/to/php-bin/php /path/to/yii-application/yii migrate
