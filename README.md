@@ -54,11 +54,11 @@ You can then install this project template using the following command:
 composer create-project --prefer-dist tacitus-def/yii2-app-basic basic
 ~~~
 
-Initialize the application by running `init` command
+Initialize the application by running `/path/to/yii-application/init` command
 
-```
-php init
-```
+Create a new database and adjust the `components['db']` configuration in `/path/to/yii-application/config/web-local.php` accordingly.
+
+Apply migrations with command `/path/to/yii-application/yii migrate`.
 
 Now you should be able to access the application through the following URL, assuming `basic` is the directory
 directly under the Web root.
@@ -74,10 +74,12 @@ a directory named `basic` that is directly under the Web root.
 
 Initialize the application by running `init` command
 
-```
-php init
-```
+    /path/to/php-bin/php /path/to/yii-application/init
+    
+Run the migrations
 
+    /path/to/php-bin/php /path/to/yii-application/yii migrate
+    
 You can then access the application through the following URL:
 
 ~~~
@@ -99,6 +101,10 @@ Start the container
 
     docker-compose up -d
     
+Run the migrations
+
+    docker-compose run --rm php /app/yii migrate
+    
 You can then access the application through the following URL:
 
     http://127.0.0.1:8000
@@ -113,7 +119,7 @@ CONFIGURATION
 
 ### Database
 
-Edit the file `config/db-local.php` with real data, for example:
+Edit the file `/path/to/yii-application/config/db-local.php` with real data, for example:
 
 ```php
 return [
